@@ -1,0 +1,47 @@
+<!-- <!-- <!-- IndexDb is a low level API for the client side stoarge of the larger a,mount of the structuired data 
+including the files as well as the blobs . API uses the indexed to enable the 
+// high performance of the seaches of this data 
+
+//// WEb Stoarge - 
+Its is an API that orivides a mechnism by which the browser can store the key value pair locally within the user borowser in much more intutive fashion by using the concept of cookies .
+This can of two types including the 
+local Stoatrge whioch has no expiration time and date 
+Session Stotrage - It stores fot one session and data is lost when the browser is closed 
+
+// Post Message is just like two knigdoms in which two of the castles and in that none of the guards were allowed for the talking purpoise so They made a spoecial messenger which is known as the post message it can share the message across the diffetrnet kingdoms for the safety purpose  -->
+
+
+
+// Cookie 
+It is a piece of the data that is stored in your computer to be accessed by your browsser Cookies are saved as the key value pair for the 
+document.cookie = "username=Harsh"
+
+
+// Cookies are used to remember the information about the user profile . It basically involves 2 steps which are following 
+1-When the user visits a web page the user prfile can be stored in a cookioe 
+2- Next time the user visits the page the cookie will rember the user profile 
+ -->
+
+ <!-- Local Stoarge - Data Stored in the local storage remains even after the browser is closed and reopemed . It has no of the expiration time 
+ Session Storage 0 Data stored in the session is only last for the duration of the page sessioon  -->
+
+
+ The Window oject implements the window local Soarge and WindowSessionStorage object which has 
+ Local Storage andd the session storage 
+
+ // Methods Availabel on the Session Storage are 
+ it is reading wrinting and deleting basicallu the CRUD operation 
+
+ // Storage Event os like a notification that goes off whenver the something in the browser storage is changes by another tab or the window . It is just  like you are the admin of your notebook but simeone has changed your notebook becuase there are multiple users so it keeps track on them 
+
+ // Storage Event handler is like a plan of action that gets triggered whenevre the storage event occurs . 
+ 1
+ ** 
+ A web Worker is like a helper that your web page can hire to do the background tasks wothout slowing down the main page 
+ Web Worker is just like that runs in the background taking care of the heavy operation and the time consuming operation . it doesnot affect the performance of the main page 
+ Runs in the backgorund in the foregrounf and it without blocking or slowing down the main page 
+ - No Direct access to the DOM Elements 
+
+
+
+ -->
