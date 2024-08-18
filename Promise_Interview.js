@@ -257,3 +257,192 @@
 // }
 
 // processOrders([101, 102, 103]);
+
+
+// // The Object.is() method determined whether two values are the same values or not . 
+// console.log(Object.is("hello", "hello")); // True 
+
+// Object.is([], []); // false 
+
+// Some of the Application of Object IS method are follows 
+// 1-> it is used for the comparison of two strings 
+// 2-> It is used for the compariosn of two numbers 
+// 3-> It is used for the comparing the Polarity of Two Number 
+// 4-> It is used for the compariosn of two objects 
+
+
+// Object.assign() is a method which is used to copy the values and the 
+// // the values and the properties from one or more than one source to a target object 
+// // It returns the target object which has the properties and the values of from the source objects .
+
+// Object.assign(target , ...sources);
+
+
+// const target = {a: 1 , b: 2};
+// const source = {b : 3 , c: 4};
+
+// const returnedtarget = Object.assign(target , source);
+
+// console.log(target);
+
+// console.log(returnedtarget);
+
+// // The Applications of the Assign Method are 
+// 1-> it is used for the cloning of the objects 
+// 2-> It is used for the merging objects with same properties 
+
+// A proxy objects in Javascript act like middleware between you and 
+// another object allowing you to customize how certian operations are handled 
+
+// Handler Objext - The Set of rules that defines how the proxy 
+// should behave when someones tries to interact with the target object .
+
+// var proxy = new Proxy(target , handler);
+
+// const person = {name : 'Harsh Raj' , age : 34};
+
+// const handler = {
+//     get(target , prop) {
+//         if(prop == 'name') {
+//             l
+//         }
+//     }
+// }
+
+// If an Object is frozen using the Object.freeze() method then its properties become 
+// immutable and no changes can be made in them whereas if an object is sealed using the Object.seal() 
+// methid then the chnages can be made in the exisiting  properties of an 
+// object 
+
+// const object = {
+//     a : "Good Morning ",
+//     b : 100 , 
+// };
+
+// for(let value of Object.values(object)) {
+//     console.log(`${value}`);
+// }
+
+// const user = {
+//     name : "John",
+//     gender : "male",
+//     age : 40 ,
+// }; 
+
+// console.log(Object.values(user))
+
+
+// const user = {
+//     name : "John", 
+//     printInfo : function () {
+//         console.log(`My Name is ${this.name}`);
+//     },
+// };
+
+// const admin = Object.create(user);
+
+// admin.name = "Harsh";
+
+// admin.printInfo();
+
+
+// A Weakset is used to store a collection of a weakly held objects .
+// The Syntax would be as following 
+// new WeakSet([iterable])
+
+// A Weakset in Javascript is like a Special Collection of Objects . 
+// It is only stored to store only sets you cannot add the number , strings or obejects 
+// No Duplicates - It doesnot allow for the duplication of the objects 
+
+// Weak Reference -> This means that if there no other refernce to an object it can be automatically removed from the Weakset 
+
+// let weakset = new Weakset();
+
+// let obj1 = {name : "Object 1 "};
+// let obj2 = {name : "Object 2"};
+
+// weakset.add(obj1);
+// weakset.add(obj2);
+
+// console.log(weakset.has(obj1));
+
+// obj1 = null  ; 
+
+// The Main Differnce is that the refernce to object while the refernce to the 
+// objects in Weakset are weak . An Object in weakset can be garbage collected if there is no other refernce on it . 
+
+// Set can store any valu whereas Weakset can store only the Collection of the Objects .
+// Weakset doesnot have the size property jsut like the set 
+
+
+// The encodedURL Function is used to encode the complete URI which has the special characters 
+
+// var uri = "https://mozilla.org/?x=шеллы";
+// var encoded = encodeURI(uri);
+
+// console.log(encoded)
+
+// try {
+//     console.log(decodeURI(encoded));
+// }
+// catch(e){
+//     console.error(e);
+// }
+
+
+// Eval runs code stored as a String 
+// Eneval Creates the String from the Code 
+
+// An anonymous function is Javascript is simply a Function that doesnto have a name 
+
+// function sayHello() {
+//     console.log('hello');
+// }
+
+// // Anonymous Function assigned to a variable 
+
+// let greet = function() {
+//     setTimeout
+// };
+
+// greet();
+
+// A Local Varibale takes precedence over the global variable with the same name  
+
+
+
+// Advantages of Getters and Setters 
+// 1-> They Provide the Simpler Syntax 
+// 2-> 
+
+// const person = {
+//     firstName : "Harsh",
+//     lastName : "Raj",
+
+//     get fullName() {
+//         return this.firstName + ' ' + this.lastName;
+//     }
+// };
+
+// console.log(person.fullName)
+
+// This is basically used when the we are not accessign the value of the 
+// properties directly 
+
+// A Setter is a methid that allows you to define a custom way to set the vale of the property 
+
+const person = {
+    firstName : 'harsh',
+    lastName : 'Raj',
+
+    set fullName(name) {
+        const parts = name.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+};
+
+person.fullName = "Ayush Kirloskar ";
+console.log(person.firstName); // "Jane"
+console.log(person.lastName);  // "Smith"
+
