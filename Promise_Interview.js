@@ -431,18 +431,60 @@
 
 // A Setter is a methid that allows you to define a custom way to set the vale of the property 
 
-const person = {
-    firstName : 'harsh',
-    lastName : 'Raj',
+// const person = {
+//     firstName : 'harsh',
+//     lastName : 'Raj',
 
-    set fullName(name) {
-        const parts = name.split(' ');
-        this.firstName = parts[0];
-        this.lastName = parts[1];
-    }
-};
+//     set fullName(name) {
+//         const parts = name.split('');
+//         this.firstName = parts[0];
+//         this.lastName = parts[1];
+//     }
+// };
 
-person.fullName = "Ayush Kirloskar ";
-console.log(person.firstName); // "Jane"
-console.log(person.lastName);  // "Smith"
+// person.fullName = "Ayush Kirloskar ";
+// console.log(person.firstName); // "Jane"
+// console.log(person.lastName);  // "Smith"
+
+
+// In Javascript the Functions are No Data Type for the Parameters 
+// // There  is no any type of Type Checking 
+// There is Check on the Number of Arguments 
+
+// Error Object -----
+// AN error Object is a built in error Information when an error occurs .
+// It has two properties name and message .
+// try {
+//     greeting("Welcome");
+// }
+// catch(err) {
+//     console.log(err.name + )
+// }
+
+// A Synatx Error is thrown if you try to evaluate code with the synatx error 
+// An Iterator is an object defines a defines a seqence and return value upon its termination . 
+
+// An Iterator in Javascript is like a tool that helps 
+
+
+/// Synchrnous Iterations was intrcuded and workd with tthe below set of components 
+
+// Iterable : it is an Object can be iterated over vua method whose ke is Symbol iterator 
+
+// Creation of Infinte Loop in Javascript 
+// for(;;) {}
+// while(true) {}
+// This is used for the creation of the infinite loop in Javascript 
+// as there is not ending case in this 
+
+for(var i = 0 ; i < 4 ; i++) {
+    // Global Space 
+    setTimeout(() => console.log(i));
+}
+
+for(let i = 0 ; i < 4 ; i++) {
+    // This is Block Space 
+    setTimeout(() => console.log(i));
+}
+
 
