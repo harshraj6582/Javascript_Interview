@@ -477,14 +477,24 @@
 // This is used for the creation of the infinite loop in Javascript 
 // as there is not ending case in this 
 
-for(var i = 0 ; i < 4 ; i++) {
-    // Global Space 
-    setTimeout(() => console.log(i));
-}
+// for(var i = 0 ; i < 4 ; i++) {
+//     // Global Space 
+//     setTimeout(() => console.log(i));
+//     // The Output is continously 4 because of the event queue / loop of Javascript , 
+//     // The setTimeout callback is called after the loop has been executed . SInce the variable is 
+//     // declared with the var so it becomes a global scopr 
+// }
 
-for(let i = 0 ; i < 4 ; i++) {
-    // This is Block Space 
-    setTimeout(() => console.log(i));
-}
+// for(let i = 0 ; i < 4 ; i++) {
+//     // This is Block Space 
+
+//     // The Variable i is declared as the let keyword it becomes a block 
+//     // scoped variable and it holds the new value of (0,1,2,3)
+//     setTimeout(() => console.log(i));
+// }
+
+//  Var Let and Const 
+
+
 
 
