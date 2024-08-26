@@ -136,14 +136,30 @@
 
 // var emp1 = {firstName : "Harsh" , lastName : "Rodson"};
 
-var emp1 = {firstName : "Harsh" , lastName : "Raj"};
-var emp2 = {firstName : "Ayush" , lastName : "Baily"};
+// var emp1 = {firstName : "Harsh" , lastName : "Raj"};
+// var emp2 = {firstName : "Ayush" , lastName : "Baily"};
 
-function invite(greeting1 , greeting2) {
-    console.log(
-        greeting1 + " " + this.firstName + " " + this.lastName + greeting2
-    )
-}
+// function invite(greeting1 , greeting2) {
+//     console.log(
+//         greeting1 + " " + this.firstName + " " + this.lastName + greeting2
+//     )
+// }
 
-var inviteEmployee1 = invite.bind(emp1);
-inviteEmployee1("Hello" , "How are You");
+// var inviteEmployee1 = invite.bind(emp1);
+// inviteEmployee1("Hello" , "How are You");
+
+// Bind returns a new Function allowing you to pass any number of arguments 
+
+// JSON is text-based data format following javascript object synatx which has the 
+// It is basically just text file with the extension of .json 
+
+// JSON.parse(text);
+// JSON.stringfy(object)
+
+// SLice Method returns the the selected element in an array as new array from the object . It select 
+// element starting at a given starting at given start argument and ends at a given 
+// optional end argument 
+
+// let arrayIntegera = [1,2,3,4,6,7];
+// let arrayIntegers1 = arrayIntegera.slice(0,2);
+// let arr
