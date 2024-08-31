@@ -187,13 +187,120 @@
 // A Closure in Javascript is a powerful feature where a function is bundled together with its surrounding 
 // State . in Simple Terms a Closure allow a function to access variable from its outer function even after that outer function has comoleted the executing 
 
-function Welcome(name) {
-    var greetingInfo = function (message) {
-        console.log(message + "         " + name);
-    };
-    return greetingInfo ; 
-}
+// function Welcome(name) {
+//     var greetingInfo = function (message) {
+//         console.log(message + "         " + name);
+//     };
+//     return greetingInfo ; 
+// }
 
-var myFunction = Welcome("Harsh");
-myFunction("Welcome My Dear");
-myFunction("Welcome My Dear smjdbfgiawun");
+// var myFunction = Welcome("Harsh");
+// myFunction("Welcome My Dear");
+// myFunction("Welcome My Dear smjdbfgiawun");
+
+// Modules refer to samll unit of Independent reusable code and also act as the foundation for many Javascript Design Patterns 
+
+// IndexDB is low level API for client-side storage of larger amoount of structured data including the files as well as the blobs 
+// This is basically used for the high performance of the data 
+
+// WebStorage is an API tht provides a mechanosm by which browser can store key/value pair locally within the user browser . There are 
+// basically 2 Mechanism for the stroing the data in the client 
+// Local Storage - It Stores the data for the current origin with not Expiration Date 
+// Session Storage = It Stores the data for one of the session and then the dataa is being lost when the browser tab is closed 
+
+// Basically Cookie is a piece of data that is stored on your computer to be accessed by the browser . Cookies are saved in key/Value pair .
+// Cookie are basically used for remembering the Data that is stored in the profile 
+// When the user visits a web page then the uer profile can be stored in a Cookie 
+// Next Time the user visit the oage the cookie remebers the user profile 
+
+// Web Storage is more accuare and large amount of data can be stored locally without affecting the 
+// website performance . Also the information is never being transferred to the server 
+
+// What is the Concept of Promise 
+// A Promise is an Object that may produce a signle value sime time in future with either a resolved value . It can have 3 possible states 
+// Fulfilled , rejected or being the pendding 
+
+// const promise = new Promise(
+//     (resolve) => {
+//         setTimeout(() => {
+//             resolve("I am Being resolved")
+//         },5000);
+//     },
+//     (reject) => {} 
+// );
+
+// promise.then((value) => console.log(value))
+
+// const harsh = new Promise(
+//     (resolve) =>{
+//         setTimeout(()=>{
+//             resolve("I am Being  a Promise")
+//         },5000)
+//     },
+//     (reject) => {}
+// );
+
+// harsh.then((value) => console.log(value))
+
+// Promises are used for the Handling the asynchrnous operation . They Provide an Alternative 
+// approach for the callback by reduncing the callbacks and also reducing the chances of the 
+// Callback hell and writing the Cleaner Code 
+
+// Callbacka are the Function that are passsed in to another function The Function is just invoekd as the outehr fnction complete the xecution 
+
+// function callbackFunction(name) {
+//     console.log("Hello "  + name);
+// }
+
+// function outerFunction(callbackFunction) {
+//     let name = prompt("Please enter your name.");
+//     callbackFunction(name)
+// }
+
+// outerFunction(callbackFunction)
+
+// The Callback are needed because of the javascript is an event driven language . That 
+// menas instead of waiting for the response of the javaScript will keep executing while listening for others events . 
+// This could be an example for the case in which we take a API for the data Fetching and the response gets generated when we  gets the promise execurted 
+
+// Callback hell is basically a oattern for the muiltiple nested callbacks which makes the code hard toread and debug when dealing witht the asyncghrinous code 
+
+// A Promise is an Object that supplies a Stndard-comppliant ,then Methodn 
+// You can nest the Callback inside each other so there are multiple execution which  can be dome 
+
+// const harsh = new Promise(
+//     (resolve) =>  {
+//         setTimeout(()=>{
+//             resolve(1)
+//         },1000)
+//     }
+// );
+
+// harsh.then((value) => {return value *  2} )
+// .then((value) => { console.log(value)})
+
+// Priomise.all is a Promise that takes an array of Promise that takes as array as an input 
+// and it gets resolved when all the promise get resolved and if any of the promise gets rejected all the promise 
+// are then reject 
+
+
+//  Promise.all([Promise1 , Promise2 , Promise3])
+//     .then(result => {
+//         console.log(result);
+//     })
+//     .catch(error => console.log(`Error in Executiing in this code as there is some sort of error ${error}`))
+
+// Promise.race() method will return the promise instance of the object which is firstly resolved or rejecetd . 
+
+var promise1 = new Promise(function(resolve , reject){
+    setTimeout(resolve , 500 , "one")
+});
+
+var promise2 = new Promise(function (resolve , reject){
+    setTimeout(resolve , 100 , "two")
+    console.log("This is getting execuetd ")
+});
+
+Promise.race([promise1 , promise2]).then(function(value){
+    console.log(value)
+})
