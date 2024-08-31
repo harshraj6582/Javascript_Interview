@@ -292,15 +292,87 @@
 
 // Promise.race() method will return the promise instance of the object which is firstly resolved or rejecetd . 
 
-var promise1 = new Promise(function(resolve , reject){
-    setTimeout(resolve , 500 , "one")
-});
+// var promise1 = new Promise(function(resolve , reject){
+//     setTimeout(resolve , 500 , "one")
+// });
 
-var promise2 = new Promise(function (resolve , reject){
-    setTimeout(resolve , 100 , "two")
-    console.log("This is getting execuetd ")
-});
+// var promise2 = new Promise(function (resolve , reject){
+//     setTimeout(resolve , 100 , "two")
+//     console.log("This is getting execuetd ")
+// });
 
-Promise.race([promise1 , promise2]).then(function(value){
-    console.log(value)
-})
+// Promise.race([promise1 , promise2]).then(function(value){
+//     console.log(value)
+// })
+
+// Strict Mode is a new Feature in ECMA Script 5 that allows you to place a program in strict operation Conetxt . 
+// This way it prevents certain actions from beong taken and throws more exception 
+
+// STrict Mode is used to write the secure JavaScript by nitifying the bad synatx into the real errors 
+// The Double exclamation or negation ensure that the resulting type is a Boolean 
+
+// console.log(typeof "Harsh Raj");
+
+// The Undefined property indicate that a variable has not been assiggned a Value or Declare but not intialised with 
+
+var user ; 
+console.log(typeof user)
+// This will return the undefined becuase the variable has been declared but it has no value which has been intialzed 
+
+// Whereas the Null Represents the Intentional Absence of an Object value 
+// It is one of the Javascript Primitive values . the type of the Null value is object 
+var user = null ; 
+console.log(typeof user );
+
+// Null - This is an assignment value which indicate that variable points to no object 
+// Type of Null is Object 
+// The Null Value is primitive value that represents the Null , empty and non-existent refernce 
+// Indicates the Absence of a Value from the Variable 
+
+// Undefined 
+// It is not an assignemt value where a variable has been declared but has not been assigned a value till yet 
+
+// Windiw is basically the root level elemet in any of the web page 
+// It has methods jsut like the alert and confirm and propertiees 
+
+// Document is the direct child of the window object . This is Known as Document Object Model 
+// This is accessed via the window.document or the document Object Model 
+
+// NaN function is used to determine whetehr a value is an illegal numebr (Not a Number ) or not . The Function return rue if the value equates to NAN 
+
+// Undeclared - These avraibles do not exist in a program and are not decalred 
+// If we try to access them then we will get aruntime encountered 
+
+// GLobal Variable are those that are availbel thrighout the length of the code without any of the scope . The var 
+// keyword is used to declare a local variables 
+
+// The Problem with the gloabl variables is the conflict witht e variable names of the local and global scope 
+
+// Event Flow is the order in which the event recieved on the web page . When you click an elemetn that is nested in avrious other elemenst before your lcik to the actually destinations it must trigger the click for the event for its parent and the top with the global window object 
+
+// Event Bubbling is the concept of javascript where an event that is triggered on the 
+// specific elelemt start to propogate upwars or bubble up throught the ancestoes of that element in the Document Object Model . this Means if you click any element it will trigger any of the event liosterns 
+
+
+//  Pros and Cons of Promise over the Callback 
+// 1--- It avoid the callback hell which is unreadable 
+// 2-- Easy to write the sequentoal asynchrnpis code with.then() 
+// 3--- Easy to write the parallle asynchrnous code withe Promise.all()
+
+// Attributes are defined on the HTML markup whereas properties are defined on the DOM 
+
+// Same-Origin Policy 
+///- The Same-origin policy is a plicy that prevents Javascript from making the reuest across the domain Boundaries 
+// An Origin is defined as the combination of the URL scheme , hostname and port number 
+
+// JavaScript is an Interpretated language not a comiled language . An Interpreter in the browser 
+// reads over the Javascript code interprets the each of the line and runs it .
+
+// Events are the things happen to HTML elemets . When javascript is used in the HTML pages Javascript can react on these events 
+// The preventDefault() method cancels the event if is is canelable meaning that the default action or the  behaviour to the event will not occur 
+
+// The Stop Propogation method is used to stop the event from bubbling up the event chain . 
+
+// What is the Concept of BOM(Browser Object Model) allow JavaScript to talk to the browser 
+// It consists of Object Navigator , History , Screen and the Location and Document which are the children of the window 
+
